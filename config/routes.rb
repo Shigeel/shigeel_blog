@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get '/' => 'home#top'
   get 'about' => 'home#about'
 
-  get 'posts' => 'posts#index'
+  get 'posts' => 'posts#index' 
+  get 'posts/:id' => 'posts#index' #「/posts/◯◯」のような全てのURLが該当する
 end
